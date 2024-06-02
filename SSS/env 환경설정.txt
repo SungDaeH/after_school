@@ -1,0 +1,14 @@
+1. vscode 열기
+2. 폴더 열기
+3. 원하는 위치에 폴더 생성
+4. 생성한 폴더 열기
+5. Clrt+j(터미널)입력 후 python -m venv env 입력 (mac의 경우 python3 -m venv env 입력)
+6. env안에 script안에 Activate.ps1의 경로를 복사 후 터미널에 복붙 (mac의 경우 soruce env/bin/activate 입력)
+(오류 발생시 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 입력후 다시 6번 실행)
+7. env 폴더에서 나온 뒤 새로운 문서(노트북)과 setup.ipynb을 만들고 setup.ipynb에다 명령어 입력
+%pip install langchain
+%pip install langchain-core
+%pip install langchain-openai
+%pip install langchain-community
+8. .env라는 환경변수 만들고 그 안에 OPENAI_API_KEY = 'Openapi의 시크릿 키' 입력
+(openapi의 접근 할 수 있게 만드는 설정)
