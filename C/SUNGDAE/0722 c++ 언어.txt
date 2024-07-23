@@ -1,0 +1,21 @@
+#include <iostream>
+
+int main(){
+    
+    int result = 0; // int 형 정의
+    float f = 1.32345; // float 변수 설정
+    double coefficient = 10.8 // 실수형 변수 정의
+    char ch = 'c';  // 단일 문자 정의
+    auto name = "Lady G."; // 컴파일러가 자동으로 type 을 정하게 함.
+    		// 단 초기값을 줘야 함.
+    auto address; // error. 초기값이 없어 형을 정할 수 없음
+    age = 12; // error. Variable declaration must
+	    // specify a type or use auto!
+    result = "Kenny G."; // error. Can't assign text to an int.
+    string result = "zero";  // error. Can't redefine a variable with
+		// new type.
+    int maxValue;  // Not recommended! maxValue contains
+	         // garbage bits until it is initialized
+    bool 참거짓 = false; // 한글로 변수로 정해도 됩니다. 잘 사용하진 않지만...
+}
+
