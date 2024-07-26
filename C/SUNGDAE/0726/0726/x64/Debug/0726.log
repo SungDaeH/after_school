@@ -1,0 +1,4 @@
+﻿  0726.cpp
+C:\Users\WIN10\source\repos\0726\0726.cpp(8,9): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+C:\Users\WIN10\source\repos\0726\0726.cpp(80,12): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'size_t'입니다.
+  0726.vcxproj -> C:\Users\WIN10\source\repos\0726\x64\Debug\0726.exe
