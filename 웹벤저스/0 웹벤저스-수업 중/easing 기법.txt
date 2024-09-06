@@ -1,0 +1,18 @@
+주   소 : https://cafe.daum.net/goodtraining
+카페명 : 프로그램 시작
+
+인물만 추출하는 사이트 : remove.bg
+
+easing 기법 :
+linear swing easeInQuad easeOutQuad easeInOutQuad easeInCubic 
+easeOutCubic easeInOutCubic easeInQuart easeOutQuart easeInOutQuart 
+easeInQuint easeOutQuint easeInOutQuint easeInSine easeOutSine 
+easeInOutSine easeInExpo easeOutExpo easeInOutExpo easeInCirc 
+easeOutCirc easeInOutCirc easeInElastic easeOutElastic easeInOutElastic 
+easeInBack easeOutBack easeInOutBack easeInBounce 
+easeOutBounce easeInOutBounce
+
+눈누 사용법
+
+javascript 사용법
+jquery 사용법
