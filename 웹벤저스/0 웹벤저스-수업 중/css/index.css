@@ -4,18 +4,13 @@
     font-weight: normal;
     font-style: normal;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
 * {
     margin: 0; padding: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
 }
-
-html, body{
+html, body {
     scroll-behavior: smooth;
 }
 .back {
@@ -107,49 +102,54 @@ html, body{
 .myName {
     margin-top: 50px;
 }
-
-/* /상세 페이지 스타일 */
-#myLi, #myPro, #myGallery{
+/* 9-6(수) */
+a {
+    color: black;
+    text-decoration: none;
+}
+/* 상세 페이지 스타일 */
+#myLi, #myPro, #myGalley {
     position: absolute; left: 0;
     width: 100%; height: 100%;
 }
 
-#myLi{
-    top: 100%;
-} 
 
+
+#myLi {
+
+    top: 100%;
+}
 .Li_box {
-    width: 100%; height: 100%;    
+    width: 100%; height: 100%;
     display: flex;
 }
-
-.Li_box li{
+.Li_box li {
     width: 50%; height: 100%;
 }
-
-.Li_box .Li_left{
+.Li_box .Li_left {
     background: greenyellow;
 }
 
 /* 모니터 박스 */
-.monitorbox{
+.monitorBox {
     position: absolute;
-    top: 90%; left: 55%;
-    width: 390px; height: 230px;
-    border: 1px solid black;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(../img/1200px-LG_L194WT-SF_LCD_monitor.jpg);
+    width: 500px; height: 500px;
+    border: 0px solid black;
+    background: url(../img/monitor.avif);
     background-size: 100% 100%;
 }
-
-.monitorbox .big{
+/* 자격증 보기 */
+.monitorBox .big {
     position: absolute;
     top: 90px; left: 55px;
     width: 390px; height: 230px;
-    background: white;
+    border: 5px solid orange;
+    background: blue;
+    overflow: hidden;
 }
-
-.monitorbox .big .img5{
+.monitorBox .big .img5 {
     position: relative;
     top: 0; left: 0;
     width: 500%; height: 100%;
@@ -157,46 +157,121 @@ html, body{
     display: flex;
     justify-content: space-between;
 }
-
-.monitorbox .big .img5 li{
+.monitorBox .big .img5 li {
     width: 20%; height: 100%;
     outline: 1px solid green;
 }
+/* 자격증 소개 화면에서 메뉴(Li_menu) */
+.Li_box .Li_left .Li_menu {
+    position: relative; top: 100px; left: 0;
+    width: 200px; height: 50px;
+    border: 1px solid white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center; line-height: 50px;
+    font-size: 2rem;
+    background: orange;
+    cursor: pointer;
+}
+/* 자격증 5개 소개 */
+.Li_box .Li_left .Li_kind {
+    position: relative; top: 100px; left: -100%;
+    width: 200px;
+}
+.Li_box .Li_left .Li_kind li {
+    width: 100%; height: 50px;
+    border: 1px solid #ccc;
+    text-align: right;
+    line-height: 50px;
+    padding-right: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+.Li_box .Li_left .Li_kind li:hover {
+    background: black; color: white;
+}
+.Li_box .Li_right {
 
-#myPro{
-    top: 200%;
+}
+.Li_box .Li_right div {
+    width: 400px; height: 50px;
+    margin: 50px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 20px;
+    line-height: 50px;
+    font-size: 2rem;
+    
 }
 
-#myGallery{
+
+
+
+
+#myPro {
+    top: 200%;
+    background: url(../img/bg1.jpg);
+    background-size: 100% 100%;
+}
+
+.purple {
+    position: relative; top: 0; left: 0;
+    width: 1000px; height: 700px;
+    border: 0px solid blue;
+    border-radius: 50px;
+    background: rgba(128, 0, 128, 0.3);
+    transform: skew(-45deg);
+    margin-left: -500px;
+    cursor: pointer;
+}
+.purple p {
+    width: 100%; height: 150px;
+    border: 0px solid black;
+    line-height: 50px;
+    margin-left: -100px;
+    text-align: right;
+    padding: 50px;
+    font-size: 5rem;
+    font-family: hy견고딕;
+    transform: skew(45deg);
+    color: white;
+}
+.ply {
+    position: absolute; top: 100px; left: 100px;
+    width: 200px; height: 100px;
+    border: 1px solid black;
+    background: url(../img/ply.png);
+    background-size: 100% 100%;
+}
+
+
+#myGalley {
     top: 300%;
 }
 
-.top{
-    position: fixed; bottom: 100px;
-    top: 750px;
+.top {
+    position: fixed; 
+    top: 750px; right: 100px;
     z-index: 99;
-    right: 100px;
-    border: 1px solid gray;
     width: 70px; height: 70px;
+    border: 1px solid #777;
     border-radius: 100%;
     background: black; color: white;
     text-align: center;
     line-height: 70px;
     animation: top_ani 2s linear infinite;
 }
-
-@keyframes top_ani{
-    0% {top : 775px}
-    50% {top : 750px}
-    100% {top : 775px}
+@keyframes top_ani {
+    0% { top: 775px; }
+    50% { top: 750px; }
+    100% { top: 775px; }
 }
-
-.top:hover{
-    background-color: red;
-    color: white;
-}
-
-.top a{
+.top a {
     display: block;
     border-radius: 100%;
+    color: white;
+}
+.top a:hover {
+    background: red; color: white;
 }

@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹벤저스</title>
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    
     <script src="js/easing.js"></script>
-    <!--<script src="./js/jquery.js"></script>-->
 </head>
 <body>
-    <div class="back" id="top">
+    <div class="back" id="home">
         <div class="one">
             <p>포트폴리오</p>
             <p><small>(웹벤저스)</small></p>
@@ -30,16 +31,16 @@
         <p class="myFm myForm">성 별 : 남</p>
         <p class="myLi myForm">
             <a href="#myLi">
-                자격증 : ITQ 포토샵, 일러스트, 웹디자인 기능사
+                자격증 : ITQ 포토샵, 정보처리 기능사
             </a>
         </p>
         <p class="myPro myForm">
             <a href="#myPro">
-            이력사항 : 구청 알바 6개월
+                이력사항 : 구청 알바 6개월
             </a>
         </p>
-        <p class="myGallery myForm">
-            <a href="#myGallery">
+        <p class="myGalley myForm">
+            <a href="#myGalley">
                 갤러리
             </a>
         </p>
@@ -47,10 +48,29 @@
 
     <div id="myLi">
         <ul class="Li_box">
-            <li class="Li_left">1</li>
-            <li class="Li_right">2</li>
+            <li class="Li_left">
+                <div class="Li_menu">
+                    자격증 소개
+                </div>
+                <ul class="Li_kind">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li class="Li_right">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </li>
         </ul>
-        <div class="monitorbox">
+
+
+        <div class="monitorBox">
             <div class="big">
                 <ul class="img5">
                     <li>1</li>
@@ -62,16 +82,28 @@
             </div>
         </div>
     </div>
+
+
     <div id="myPro">
-        이력사항 상세페이지
+        <div class="purple">
+            <p>이력 사항</p>
+        </div>
+        <p class="ply"></p>
     </div>
-    <div id="myGallery">
+
+
+
+
+
+    <div id="myGalley">
         갤러리 상세페이지
     </div>
 
     <div class="top">
-        <a href="#home"></a>
+        <a href="#home">
             Top
-        </div>
+        </a>        
+    </div>
+
 </body>
 </html>
